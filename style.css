@@ -1,1 +1,35 @@
+/* Importação de fonte elegante para os títulos */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
 
+/* Aplicação da fonte nos títulos */
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Ajuste fino para a seção de reflexão */
+.reflexao-container {
+    background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%);
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* Efeito de destaque para links do menu */
+nav a {
+    position: relative;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: #16a34a; /* verde-600 */
+    transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
